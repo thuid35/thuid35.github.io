@@ -10,6 +10,7 @@
 body {
     cursor: url("/assets/ico/sym46.ico"), auto;
     margin: 0;
+    font-family: "Noto Sans TC", sans-serif;
 }
 
 /* background */
@@ -336,7 +337,7 @@ body {
 
 .info {
     height: 500px;
-    padding: 40px;
+    padding: 5vw;
     width: auto;
     z-index: 1;
 }
@@ -488,6 +489,13 @@ body {
   
 .info_cal_btn_text {
     margin: 0 1.5em
+}
+
+@media screen and (min-width: 1920px) {
+    .info_box {
+        padding-left: 5vw;
+    }
+
 }
 
 @media screen and (max-width: 1110px) {
