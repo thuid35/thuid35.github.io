@@ -344,7 +344,7 @@ body {
 .info_back_img img{
     position: absolute;
     width: 800px;
-    margin-top: -10px;
+    margin-top: -240px;
     margin-left: -350px;
     rotate: 40deg;
     transition: all 0.6s ease;
