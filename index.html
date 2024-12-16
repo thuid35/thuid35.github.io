@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- js -->
-        <script src="script/index.js" defer></script>
+        <script src="script/index.js"></script>
     </head>
 
     <body>
@@ -47,23 +47,29 @@
         </div>
 
         <section class="cover">
-            <div class="cover_title">
-                <h1 class="cover_title_big">綺想:</h1>
-                <h1 class="cover_title_small">東海大學工業設計學系 第35屆 期末展</h1>
-            </div>
-            <div class="cover_btn_space">
-                <a href="https://www.instagram.com/thuid_35/" target="_blank">
-                    <button class="cover_btn">
+            <div class="cover_left">
+                <div class="cover_title">
+                    <h1 class="cover_title_big">綺想:</h1>
+                    <h1 class="cover_title_small">東海大學工業設計學系 第35屆 期末展</h1>
+                </div>
+                <div class="cover_btn_space">
+                    <a href="https://www.instagram.com/thuid_35/" target="_blank">
+                        <button class="cover_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path></svg>
+                            <div class="cover_btn_text">前往35屆IG</div>
+                        </button>
+                    </a>
+                   
+                    <button class="cover_btn" onclick="click_nope()">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path></svg>
-                        <div class="cover_btn_text">前往35屆IG</div>
+                        <div class="cover_btn_text">展覽手冊</div>
                     </button>
-                </a>
-               
-                <button class="cover_btn" onclick="click_nope()">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path></svg>
-                    <div class="cover_btn_text">展覽手冊</div>
-                </button>
+                </div>
             </div>
+            <div class="cover_right">
+                <div class="cover_circle"></div>
+                <img src="assets/img/heart_fixed.png" draggable="false">
+            </div>  
         </section>
 
         <section class="info">

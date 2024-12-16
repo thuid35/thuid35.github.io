@@ -23,6 +23,16 @@ window.addEventListener('scroll', function() {
     }
 });
 
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.cover_circle');
+  
+  if (window.scrollY > cover_title_y) {
+    header.classList.add('cover_circle_scrolled');
+  } else {
+    header.classList.remove('cover_circle_scrolled');
+  }
+});
+
 // windows alert for clicking the second button
 function click_nope() {
     window.alert("展覽尚未開始 敬請期待！");
