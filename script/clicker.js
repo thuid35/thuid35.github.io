@@ -4,7 +4,7 @@ document.getElementById("info_cal_btn_id").addEventListener('click', function() 
     const ua = navigator.userAgent.toLowerCase();
     
     const googleCalUrl = "https://calendar.app.google/gUYS7n2c956XRj4V6";
-    const appleCalUrl = "/assets/special/東海工設期末展.ics";
+    const appleCalUrl = "webcal://p120-caldav.icloud.com/published/2/MTY4MDM3Njk2NDAxNjgwM2_IsGOs3hnXxeYibaoPDkxoxo9XNguDG1he_qFmtC5xAX7H8EaOEemQ_K0ErF3pQei3P_UCfIRak__8WvltERQ";
     
     if (/android/.test(ua)) {
       window.open(googleCalUrl, '_blank');
