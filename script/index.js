@@ -14,27 +14,27 @@ window.addEventListener('scroll', function() {
 
 // scroll listener for cover_title blur
 window.addEventListener('scroll', function() {
-    const header = document.querySelector('.cover_title');
+    const covertitle = document.querySelector('.cover_title');
     
     if (window.scrollY > cover_title_y) {
-      header.classList.add('cover_title_scrolled');
+      covertitle.classList.add('cover_title_scrolled');
     } else {
-      header.classList.remove('cover_title_scrolled');
+      covertitle.classList.remove('cover_title_scrolled');
     }
 });
 
 window.addEventListener('scroll', function() {
-  const header = document.querySelector('.cover_circle');
+  const circle = document.querySelector('.cover_circle');
   
   if (window.scrollY > cover_title_y) {
-    header.classList.add('cover_circle_scrolled');
+    circle.classList.add('cover_circle_scrolled');
   } else {
-    header.classList.remove('cover_circle_scrolled');
+    circle.classList.remove('cover_circle_scrolled');
   }
 });
 
-// windows alert for clicking the second button
+// windows alert for clicking the second button in cover
 function click_nope() {
-    window.alert("展覽尚未開始 敬請期待！");
+    window.alert(":展覽尚未開始 敬請期待！");
 };
  

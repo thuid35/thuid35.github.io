@@ -7,6 +7,8 @@
     --background-second-color: rgb(200, 127, 129);
 }
 
+
+
 body {
     cursor: url("/assets/ico/sym46.ico"), auto;
     margin: 0;
@@ -22,6 +24,7 @@ body {
     left: 0;
     right: 0;
     height: 100%;
+    width: 100;
     background: var(--background-first-color);
     background: linear-gradient(137deg, var(--background-first-color) 0%, var(--background-second-color) 100%); 
 }
@@ -768,7 +771,7 @@ body {
 
 .footer h1{
     margin: 0;
-    font-size: 25px;
+    font-size: 20px;
     color: #886565;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -793,7 +796,7 @@ body {
     
     .footer h1{
         margin: 0;
-        font-size: 25px;
+        font-size:20px;
         color: #886565;
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
