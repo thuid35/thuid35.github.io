@@ -139,7 +139,7 @@ body {
 
 .c_content_img2_container {
     position: absolute;
-    z-index: 1;
+    z-index: -10;
     right: 0;
     width: 400px;
     margin-right: -130px;
@@ -234,11 +234,11 @@ body {
     .c_content_img2_container {
         position: absolute;
         z-index: 11;
-        width: 140px;
-        margin-top: 320px;
+        width: 240px;
+        margin-top: 300px;
         margin-right: 0px;
         right: 0;
-        overflow: hidden;
+        z-index: -10;
     }
     
     .c_content_img2 {
@@ -250,7 +250,7 @@ body {
         position: absolute;
         z-index: 1;
         width: 200px;
-        margin-left: -70px;
+        margin-left: -10px;
         margin-top: 1130px;
     }
     
