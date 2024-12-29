@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    cursor: url("/assets/ico/sym46.ico"), auto;
+    font-family: "Noto Sans TC", sans-serif;
+    user-select: none;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* cover section */
+
+.t_cover_container {
+    height: 400px;
+    margin-top: 100px;
+    position: relative;
+    padding: 0 60px 0 60px;
+}
+
+.t_cover_title {
+    margin: 50px;
+    position: absolute;
+    z-index: 10;
+}
+
+.t_cover_title_1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Noto Serif TC", serif;
+    color: #ffffff;
+    transition: filter 1.8s ease;
+}
+
+.t_cover_title_1.blured {
+    filter: blur(5px);
+}
+
+.t_cover_title_2 {
+    font-size: 25px;
+    font-weight: 200;
+    color: #ffffff;
+    margin-left: 10px;
+    transition: filter 1.8s ease;
+}
+
+.t_cover_title_2.blured {
+    filter: blur(5px);
+}
+
+.t_cover_img_container {
+    right: 0;
+    margin-right: 180px;
+    margin-top: -30px;
+    position: absolute;
+    width: 400px;
+    z-index: 0;
+}
+
+.t_cover_bigimg {
+    width: 100%;
+    transition: filter 1.8s ease;
+}
+
+.t_cover_bigimg.blured {
+    filter: blur(5px);
+}
+
+@media screen and (max-width: 1110px) {
+    .t_cover_container {
+        height: 300px;
+        margin-top: 100px;
+        position: relative;
+        padding: 0 30px 0 30px;
+    }
+    
+    .t_cover_title {
+        margin: 10px;
+        position: absolute;
+        z-index: 10;
+    }
+    
+    .t_cover_title_1 {
+        font-size: 40px;
+        font-weight: 700;
+        font-family: "Noto Serif TC", serif;
+        color: #ffffff;
+        transition: filter 1.8s ease;
+    }
+    
+    .t_cover_title_1.blured {
+        filter: blur(5px);
+    }
+    
+    .t_cover_title_2 {
+        font-size: 15px;
+        font-weight: 200;
+        color: #ffffff;
+        margin-top: -20px;
+        margin-left: 0px;
+        transition: filter 1.8s ease;
+    }
+    
+    .t_cover_title_2.blured {
+        filter: blur(5px);
+    }
+    
+    .t_cover_img_container {
+        opacity: 0;
+    }
+    
+    .t_cover_bigimg {
+        width: 100%;
+        transition: filter 1.8s ease;
+    }
+    
+    .t_cover_bigimg.blured {
+        filter: blur(5px);
+    }
+}
+
+/* content */
+
+.t_content {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.t_temp_comingsoon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;  
+}
+
+.t_temp_comingsoon h1{
+    font-size: 20px;
+    color: #886c6c;
+    font-weight: 400;
+    margin: 60px;
+    background-color: #ffffff;
+}

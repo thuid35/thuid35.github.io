@@ -23,3 +23,8 @@ function mobinav() {
       document.getElementById("mobi-nav-bar").style.display = "block";
   }
 }
+
+// windows alert for clicking the second button in cover
+function click_nope() {
+  window.alert(":展覽尚未開始 敬請期待！");
+};

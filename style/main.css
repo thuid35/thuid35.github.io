@@ -1,0 +1,344 @@
+
+/* 
+██████████████████████████████
+█   Main css for all pages   █
+██████████████████████████████   
+*/
+/* Background, Navbar, Footer, Back to top button */
+
+:root {
+    --background-first-color: rgba(212, 150, 151);
+    --background-second-color: rgb(200, 127, 129);
+}
+
+/* █ Background █ */
+
+.background {
+    z-index: -100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background: var(--background-first-color);
+    background: linear-gradient(137deg, var(--background-first-color) 0%, var(--background-second-color) 100%); 
+}
+
+/* █ Navbar style █ */
+
+.nav-container {
+    user-select: none;
+    position: fixed;
+    display: flex;
+    padding: 20px;
+    height: 50px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(0px);
+    transition:backdrop-filter 0.3s ease;
+    transition:background-color 1s ease;
+}
+
+.nav-container.scrolled {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+}
+
+.nav-title {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav-title a {
+    text-decoration: none;
+}
+
+.nav-title h1{
+    font-size: 24px;
+    color: white;
+    user-select: none;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    width: 400px;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-items {
+    display: inline-block;
+    padding-bottom:2px;
+    background-image: linear-gradient(#ffffff 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+    font-family: "Noto Sans TC", sans-serif;
+}
+  
+.nav-items:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+}
+
+.mobi-nav-bar-icon {
+    display: none;
+}
+
+.mobi-nav-bar {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+
+    .nav-container {
+        user-select: none;
+        position: fixed;
+        width: auto;
+        display: flex;
+        padding: 15px;
+        height: 30px;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0);
+        left: 0;
+        top: 0;
+        z-index: 100;
+        backdrop-filter: blur(0px);
+        transition: backdrop-filter 0.3s ease;
+        transition: background-color 1s ease;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-title h1{
+        font-size: 25px;
+        color: white;
+        user-select: none;
+        font-family: "Noto Sans TC", sans-serif;
+    }
+
+    .mobi-nav-bar-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .mobi-nav-bar-icon i{
+        font-size: 25px;
+        color: #ffffff;
+    }
+
+    .mobi-nav-bar {
+        position: absolute;
+        width: 100vw;
+        z-index: 90;
+        margin-top: 118px;
+        background-color: #ffffff;
+        right: -100%; 
+        animation: slideOut 0.6s ease-in-out;
+        display: none; 
+    }
+
+    .mobi-nav-bar-links {
+        width: 90%;
+        display: flex;
+        gap: 30px;
+    }
+
+    .mobi-nav-items {
+        list-style-type: none;
+    }
+
+    .mobi-nav-items a{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: #8b6e6e;
+    }
+
+    @keyframes slideIn {
+        from {
+          right: -100%;
+        }
+        to {
+          right: 0;
+        }
+      }
+      
+      @keyframes slideOut {
+        from {
+          right: 0;
+        }
+        to {
+          right: -100%;
+        }
+      }
+    
+}
+
+/* █ Footer █ */
+
+.footer {
+    position: absolute;
+    margin-top: 100px;
+    bottom: unset;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #fbc1c1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.footer h1{
+    margin: 0;
+    font-size: 20px;
+    color: #886565;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    user-select: none;
+}
+
+@media screen and (max-width: 1110px) {
+
+    .footer {
+        position: absolute;
+        margin-top: 80px;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background: #fbc1c1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        flex-direction: column;
+    }
+    
+    .footer h1{
+        margin: 0;
+        font-size:20px;
+        color: #886565;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        user-select: none;
+    }
+    
+}
+
+/* █ Back to top button █ */
+
+#btt_button {
+    display: inline-block;
+    background-color: #614c4b;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+}
+
+#btt_button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#btt_button:hover {
+    cursor: pointer;
+    background-color: #916d6d;
+}
+  
+#btt_button:active {
+    background-color: #ce9d9d;
+}
+  
+#btt_button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (max-width: 700px) {
+
+    #btt_button {
+        display: inline-block;
+        background-color: #614c4b;
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        border-radius: 10px;
+        position: fixed;
+        bottom: 34px;
+        right: 34px;
+        transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 100;
+    }
+    
+    #btt_button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1.6em;
+        line-height: 45px;
+        color: #eadddd;
+    }
+    
+    #btt_button:hover {
+        cursor: pointer;
+        background-color: #916d6d;
+    }
+      
+    #btt_button:active {
+        background-color: #ce9d9d;
+    }
+      
+    #btt_button.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}

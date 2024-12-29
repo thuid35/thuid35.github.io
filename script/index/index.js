@@ -1,17 +1,7 @@
-var navbar_y = 50;
+
+// Use for index page
+
 var cover_title_y =100;
-
-// scroll listener for navbar backdrop blur
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('.nav-container');
-    
-    if (window.scrollY > navbar_y) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-});
-
 // scroll listener for cover_title blur
 window.addEventListener('scroll', function() {
     const covertitle = document.querySelector('.cover_title');
@@ -33,8 +23,3 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// windows alert for clicking the second button in cover
-function click_nope() {
-    window.alert(":展覽尚未開始 敬請期待！");
-};
- 

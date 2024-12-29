@@ -14,6 +14,9 @@
 
         <!-- icon and css -->
         <link href="assets/icon/favicon.png" rel="icon">
+
+        <link href="/style/main.css" rel="stylesheet">
+        <link href="/style/btt_button.css" rel="stylesheet">
         <link href="style/index.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -27,19 +30,24 @@
             <!-- pc normal menu -->
             <nav class="nav-bar">
                 <ul class="nav-links">
-                    <li class="nav-items"><a href="#">主頁</a></li>
-                    <li class="nav-items"><a href="#">導覽</a></li>
-                    <li class="nav-items"><a href="#">課題介紹</a></li>
-                    <li class="nav-items"><a href="#">關於展覽</a></li>
+                    <li class="nav-items"><a href=".">主頁</a></li>
+                    <li class="nav-items"><a href="/tour.html">導覽</a></li>
+                    <li class="nav-items"><a href="/courses.html">課題介紹</a></li>
+                    <li class="nav-items"><a href="/about.html">關於展覽</a></li>
                 </ul>
             </nav>
             <!-- mobile hamburger menu -->
             <div class="mobi-nav-bar-icon">
-                <i class="fa fa-bars"></i>
+                <a><i class="fa fa-bars"></i></a>
             </div>
             <div class="mobi-nav-bar">
-                <!-- adding later -->
-            </div>   
+                <ul class="mobi-nav-bar-links">
+                    <li class="mobi-nav-items"><a href=".">主頁</a></li>
+                    <li class="mobi-nav-items"><a href="/tour.html">導覽</a></li>
+                    <li class="mobi-nav-items"><a href="/courses.html">課題介紹</a></li>
+                    <li class="mobi-nav-items"><a href="/about.html">關於展覽</a></li>
+                </ul>
+            </div> 
         </div>
 
         <section class="cover">
@@ -87,7 +95,7 @@
                         <div class="info_cal_btn_space">
                             <button class="info_cal_btn" id="info_cal_btn_id">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path></svg>
-                                <div class="info_cal_btn_text">加入日曆!</div>
+                                <div class="info_cal_btn_text">加入日曆 </div>
                             </button>
                         </div>
                     </div>
@@ -107,8 +115,12 @@
         </section>
 
         <!-- scripts -->
-        <script src="/script/index.js"></script>
-        <script src="/script/clicker.js"></script>
+        <script src="/script/main.js"></script>
+        <script src="/script/btt_button.js"></script>
+
+        <script src="/script/index/clicker.js"></script>
+        <script src="/script/index/index.js"></script>
+        <script src="/script/index/index-landing.js" defer></script>
         
         <!-- Web designed by eric -->
     </body>

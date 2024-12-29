@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
-    --background-first-color: rgba(212, 150, 151);
-    --background-second-color: rgb(200, 127, 129);
-}
 
 
 
@@ -13,161 +9,12 @@ body {
     cursor: url("/assets/ico/sym46.ico"), auto;
     margin: 0;
     font-family: "Noto Sans TC", sans-serif;
-}
-
-/* background */
-
-.background {
-    z-index: -100;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100;
-    background: var(--background-first-color);
-    background: linear-gradient(137deg, var(--background-first-color) 0%, var(--background-second-color) 100%); 
-}
-
-
-@media screen and (max-width: 700px) {
-    .background {
-        z-index: -100;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        background: var(--background-first-color);
-        background: linear-gradient(137deg, var(--background-first-color) 0%, var(--background-second-color) 100%); 
-    }
+    overflow-x: hidden;
 }
 
 /* header and navbar */
 
-.nav-container {
-    user-select: none;
-    position: fixed;
-    display: flex;
-    padding: 20px;
-    height: 50px;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0);
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 100;
-    backdrop-filter: blur(0px);
-    transition:backdrop-filter 0.3s ease;
-    transition:background-color 1s ease;
-}
 
-.nav-container.scrolled {
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(50px);
-}
-
-.nav-title {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.nav-title a {
-    text-decoration: none;
-}
-
-.nav-title h1{
-    font-size: 24px;
-    color: white;
-    user-select: none;
-    font-family: "Noto Sans TC", sans-serif;
-}
-
-.nav-bar {
-    display: flex;
-    width: 400px;
-    justify-content: center;
-}
-
-.nav-links {
-    display: flex;
-    gap: 40px;
-    list-style-type: none;
-    padding: 0;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.nav-items {
-    display: inline-block;
-    padding-bottom:2px;
-    background-image: linear-gradient(#ffffff 0 0);
-    background-position: 0 100%;
-    background-size: 0% 2px;
-    background-repeat: no-repeat;
-    transition:
-    background-size 0.3s,
-    background-position 0s 0.3s;
-    font-family: "Noto Sans TC", sans-serif;
-}
-  
-.nav-items:hover {
-    background-position: 100% 100%;
-    background-size: 100% 2px;
-}
-
-.mobi-nav-bar-icon {
-    display: none;
-}
-
-
-@media screen and (max-width: 700px) {
-
-    .nav-container {
-        user-select: none;
-        position: fixed;
-        width: auto;
-        display: flex;
-        padding: 15px;
-        height: 30px;
-        align-items: center;
-        background-color: rgba(255, 255, 255, 0);
-        left: 0;
-        top: 0;
-        z-index: 100;
-        backdrop-filter: blur(0px);
-        transition:backdrop-filter 0.3s ease;
-        transition:background-color 1s ease;
-    }
-
-    .nav-bar {
-        display: none;
-    }
-
-    .nav-title h1{
-        font-size: 25px;
-        color: white;
-        user-select: none;
-        font-family: "Noto Sans TC", sans-serif;
-    }
-
-    .mobi-nav-bar-icon {
-        display: block;
-        position: absolute;
-        right: 20px;
-        margin-right: 20px;
-        cursor: pointer;
-    }
-
-    .mobi-nav-bar-icon i{
-        font-size: 25px;
-        color: #ffffff;
-    }
-    
-}
 
 /* cover section */
 
@@ -285,7 +132,7 @@ body {
 @media screen and (max-width: 1240px) {
 
     .cover {
-        height: 600px;
+        height: 780px;
         margin-top: 40px;
         padding: 20px;
         width: auto;
@@ -321,7 +168,7 @@ body {
 @media screen and (max-width: 880px) {
 
     .cover {
-        height: 600px;
+        height: 700px;
         margin-top: 40px;
         padding: 20px;
         width: auto;
@@ -756,7 +603,7 @@ body {
 /* footer */
 .footer {
     position: absolute;
-    margin-top: 200px;
+    margin-top: 100px;
     bottom: unset;
     left: 0;
     right: 0;
